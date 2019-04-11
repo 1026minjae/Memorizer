@@ -1,0 +1,15 @@
+﻿<Window x:Class="Memorizer.Check"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Memorizer"
+        mc:Ignorable="d"
+        Title="Check_Erase" Height="256" Width="512" WindowStyle="None" WindowStartupLocation="CenterOwner" ResizeMode="NoResize" BorderBrush="#FF3AA0FB" BorderThickness="2" ShowInTaskbar="False">
+    <Grid>
+        <TextBox x:Name="Set_name" HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" TextWrapping="Wrap" Text="SET_NAME" VerticalAlignment="Top" Width="488" TextAlignment="Center" FontSize="36" IsReadOnly="True"/>
+        <TextBlock x:Name="text" Text="" HorizontalAlignment="Left" Height="51" Margin="0,65,0,0" VerticalAlignment="Top" Width="508" FontSize="24" TextAlignment="Center"/>
+        <Button x:Name="Yes" Content="예" HorizontalAlignment="Left" Height="94" Margin="50,135,0,0" VerticalAlignment="Top" Width="196" FontSize="24" Click="Yes_Click"/>
+        <Button x:Name="No" Content="아니오" HorizontalAlignment="Left" Height="94" Margin="266,135,0,0" VerticalAlignment="Top" Width="196" FontSize="24" Click="No_Click"/>
+    </Grid>
+</Window>

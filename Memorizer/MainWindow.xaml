@@ -1,0 +1,37 @@
+﻿<Window x:Class="Memorizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Memorizer"
+        mc:Ignorable="d"
+        Title="메모라이저 Memorizer | 메인화면" Height="580" Width="1028" ResizeMode="CanMinimize" MouseLeftButtonDown="Main_MouseDown" WindowStyle="None" BorderBrush="#FF3AA0FB" BorderThickness="2" Icon="Memorizer.ico" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Rectangle Fill="#FFF2F2FF" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="1024" />
+        <Label Content="메모라이저 Memorizer | 메인화면" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="250" Foreground="LightGray" FontSize="16" FontFamily="Malgun Gothic Semilight" Margin="4,0,0,0"/>
+        <Button x:Name="Close_Button" Content="×" HorizontalAlignment="Left" Height="28" Margin="994,2,0,0" VerticalAlignment="Top" Width="30" Click="Close_Button_Click" FontFamily="Microsoft YaHei UI Light" Background="#FFF2F2FF" BorderThickness="2,0,0,0" BorderBrush="#FF6495ED" FontSize="18" Padding="0" />
+        <Button x:Name="Mini_Button" Content="─" HorizontalAlignment="Left" Height="28" Margin="963,2,0,0" VerticalAlignment="Top" Width="30" Click="Mini_Button_Click" FontFamily="Microsoft YaHei UI Light" Background="#FFF2F2FF" BorderThickness="2,0,0,0" BorderBrush="#FF6495ED" FontSize="18" Padding="0" />
+        <Button x:Name="Info_Button" Content="도움말" HorizontalAlignment="Left" Height="28" Margin="901,2,0,0" VerticalAlignment="Top" Width="62" Click="Info_Button_Click" FontFamily="Microsoft YaHei UI Light" Background="#FFF2F2FF" BorderThickness="2,0,0,0" BorderBrush="#FF6495ED" FontSize="18" Padding="0" />
+        <Button x:Name="Update" Content="새로고침" HorizontalAlignment="Left" Height="28" Margin="819,2,0,0" VerticalAlignment="Top" Width="82" Click="Update_Click" FontFamily="Microsoft YaHei UI Light" Background="#FFF2F2FF" BorderThickness="2,0,0,0" BorderBrush="#FF6495ED" FontSize="18" Padding="0" />
+
+        <ScrollViewer HorizontalAlignment="Left" Height="525" Margin="10,40,0,0" VerticalAlignment="Top" Width="490" Padding="2,0,0,0">
+            <StackPanel x:Name="list" HorizontalAlignment="Left" VerticalAlignment="Top">
+            </StackPanel>
+        </ScrollViewer>
+
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="525" Margin="510,40,0,0" Stroke="Black" VerticalAlignment="Top" Width="4"/>
+
+        <TextBlock x:Name="title" HorizontalAlignment="Left" Height="108" Margin="524,40,0,0" TextWrapping="Wrap" Text="세트 이름" VerticalAlignment="Top" Width="490" FontSize="72" Background="#FF9AB7F5" Foreground="White" Padding="5,0,0,0" ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
+        <Label Content="단어 개수 : " HorizontalAlignment="Left" Margin="524,153,0,0" VerticalAlignment="Top" Width="116" Height="40" FontSize="20"/>
+        <Label x:Name="Word" Content="0" HorizontalAlignment="Left" Margin="889,153,0,0" VerticalAlignment="Top" Width="100" Height="40" FontSize="22" HorizontalContentAlignment="Right" Padding="5,2,1,5"/>
+        <Label Content="개" HorizontalAlignment="Left" Margin="989,153,0,0" VerticalAlignment="Top" Width="25" Height="40" FontSize="20" Padding="0,5,5,5" />
+        <TextBox x:Name="VocaList" HorizontalAlignment="Left" Height="288" Margin="524,193,0,0" TextWrapping="Wrap" Text="단어 목록" VerticalAlignment="Top" Width="490" BorderBrush="Black" FontSize="20" IsReadOnly="True"/>
+        
+
+        <Button x:Name="START" Content="학습" HorizontalAlignment="Left" Margin="524,496,0,0" VerticalAlignment="Top" Width="150" Height="32" Click="START_Click"/>
+        <Button x:Name="MAKE" Content="생성/수정" HorizontalAlignment="Left" Margin="694,496,0,0" VerticalAlignment="Top" Width="150" Height="32" Click="MAKE_Click"/>
+        <Button x:Name="ERASE" Content="삭제" HorizontalAlignment="Left" Margin="864,496,0,0" VerticalAlignment="Top" Width="150" Height="32" Click="ERASE_Click"/>
+        <Button x:Name="EXTRACT" Content="텍스트 파일 추출" HorizontalAlignment="Left" Margin="524,533,0,0" VerticalAlignment="Top" Width="235" Height="32" Click="EXTRACT_Click"/>
+        <Button x:Name="INPUT" Content="텍스트 파일 불러오기" HorizontalAlignment="Left" Margin="779,533,0,0" VerticalAlignment="Top" Width="235" Height="32" Click="INPUT_Click"/>
+    </Grid>
+</Window>

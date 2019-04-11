@@ -1,0 +1,70 @@
+﻿<Window x:Class="Memorizer.Inform"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Memorizer"
+        mc:Ignorable="d"
+       Title="메모라이저 Memorizer | 도움말" Height="580" Width="1028" ResizeMode="CanMinimize" MouseLeftButtonDown="Inform_MouseDown" WindowStyle="None" BorderBrush="#FF3AA0FB" BorderThickness="2" Icon="Memorizer.ico" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Rectangle Fill="#FFF2F2FF" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="1024" />
+        <Label Content="메모라이저 Memorizer | 도움말" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="250" Foreground="LightGray" FontSize="16" FontFamily="Malgun Gothic Semilight" Margin="4,0,0,0"/>
+        <Button x:Name="Close_Button" Content="×" HorizontalAlignment="Left" Height="28" Margin="994,2,0,0" VerticalAlignment="Top" Width="30" Click="Close_Button_Click" FontFamily="Microsoft YaHei UI Light" Background="#FFF2F2FF" BorderThickness="2,0,0,0" BorderBrush="#FF6495ED" FontSize="18" Padding="0" />
+        <Button x:Name="Mini_Button" Content="─" HorizontalAlignment="Left" Height="28" Margin="963,2,0,0" VerticalAlignment="Top" Width="30" Click="Mini_Button_Click" FontFamily="Microsoft YaHei UI Light" Background="#FFF2F2FF" BorderThickness="2,0,0,0" BorderBrush="#FF6495ED" FontSize="18" Padding="0" />
+        <TabControl HorizontalAlignment="Left" Height="529" Margin="10,37,0,0" VerticalAlignment="Top" Width="1004">
+            <TabItem Header="Memorizer 소개" FontSize="16" FontFamily="Malgun Gothic Semilight">
+                <Grid Background="#FFF2F8FF">
+                    <Image HorizontalAlignment="Left" VerticalAlignment="Top" Source="Memorizer.ico" Height="150" Width="150"/>
+                    <TextBlock HorizontalAlignment="Left" Height="50" Margin="150,25,0,0" TextWrapping="Wrap" Text="프로그램 이름 : 메모라이저 Memorizer | 제작자 : KimGoon" VerticalAlignment="Top" Width="838" FontSize="32" FontFamily="Malgun Gothic Semilight"/>
+                    <TextBlock HorizontalAlignment="Left" Height="50" Margin="150,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="820" FontSize="32" FontFamily="Malgun Gothic Semilight" Text="버그 신고 : minjae2k1@gmail.com"/>
+                    <TextBlock HorizontalAlignment="Left" Height="311" Margin="10,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="978" FontSize="20" TextAlignment="Center"><Run Text="우리나라 학생들은 영단어를 외우면서 도대체 무슨 생각을 할까."/><LineBreak/><Run Text="자신이 외우고 있는 단어의 뜻을 진정으로 이해하는 것일까."/><LineBreak/><Run Text="혼자 외로이 알파벳 덩어리를 머릿속에 쑤셔넣는 모습은 어떻게 보면 참으로 처량하다."/><LineBreak/><Run Text="KimGoon은 그래서 "/><Run Text="어떠한 것을 구상했"/><Run Text="다."/><LineBreak/><Run Text="'질문해주는 프로그램'"/><LineBreak/><Run Text="자신은 그저 만들기만 할"/><Run Text=" "/><Run Text="뿐, 어떻게 쓰던지"/><Run Text=" "/><Run Text="간에 그것은 사용자의 몫이다."/><LineBreak/><Run/><LineBreak/><Run Text="메모라이저 Memorizer에서 '단어'란 사용자가 진정으로 의미를 알고싶은 어떠한 개념이다."/><LineBreak/><Run Text="'단어'는 굳이 영단어에 국한되지 않으며 과학적 용어, 심지어 질문 또한 '단어'라고 정의내릴 수 있다."/><LineBreak/><Run Text=" "/><Run Text=" "/><Run Text=" "/><Run Text="'뜻'이란 그 '단어'에 대하여 그 의미를 일시적으로 정의내린 것이다."/><LineBreak/><Run/></TextBlock>
+                </Grid>
+            </TabItem>
+            <TabItem Header="메인화면" FontSize="16" FontFamily="Malgun Gothic Semilight">
+                <Grid Background="#FFF2F8FF">
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Top" Source="MainWindow.png" Margin="0,10,0,0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="세트 생성" FontSize="16" FontFamily="Malgun Gothic Semilight">
+                <Grid Background="#FFF2F8FF">
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Top" Source="MakeSet.png" Margin="0,10,0,0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="학습 모드 1" FontSize="16" FontFamily="Malgun Gothic Semilight">
+                <Grid Background="#FFF2F8FF">
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Top" Source="SelectMode.png" Margin="0,10,0,0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="학습 모드 2" FontSize="16" FontFamily="Malgun Gothic Semilight">
+                <Grid Background="#FFF2F8FF">
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Top" Source="UseSet.png" Margin="0,10,0,0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="학습 모드 3" FontSize="16" FontFamily="Malgun Gothic Semilight">
+                <Grid Background="#FFF2F8FF">
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Top" Source="UseSet_Answer.png" Margin="0,10,0,0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="학습 모드 4(집중 모드)" FontSize="16" FontFamily="Malgun Gothic Semilight">
+                <Grid Background="#FFF2F8FF">
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Top" Source="UseSet_FocusMode.png" Margin="0,10,0,0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="학습 모드 5(집중 모드)" FontSize="16" FontFamily="Malgun Gothic Semilight">
+                <Grid Background="#FFF2F8FF">
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Top" Source="UseSet_FocusMode_Answer.png" Margin="0,10,0,0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="각종 확인창" FontSize="16" FontFamily="Malgun Gothic Semilight">
+                <Grid Background="#FFF2F8FF">
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Top" Source="Check.png" Margin="0,10,0,0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="텍스트 파일 불러오기" FontSize="16" FontFamily="Malgun Gothic Semilight">
+                <Grid Background="#FFF2F8FF">
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Top" Source="ImportFile.png" Margin="0,10,0,0"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

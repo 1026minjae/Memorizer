@@ -1,0 +1,23 @@
+﻿<Window x:Class="Memorizer.MakeSet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Memorizer"
+        mc:Ignorable="d"
+        Title="메모라이저 Memorizer | 세트 생성" Height="580" Width="1028" ResizeMode="NoResize" MouseLeftButtonDown="MakeSet_MouseDown" WindowStyle="None" BorderBrush="#FF3AA0FB" BorderThickness="2" Icon="Memorizer.ico" WindowStartupLocation="CenterOwner" ShowInTaskbar="False">
+    <Grid>
+        <Rectangle Fill="#FFF2F2FF" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="1024" />
+        <Label Content="메모라이저 Memorizer | 세트 생성" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="250" Foreground="LightGray" FontSize="16" FontFamily="Malgun Gothic Semilight" Margin="4,0,0,0"/>
+        <Button x:Name="Close_Button" Content="×" HorizontalAlignment="Left" Height="28" Margin="994,2,0,0" VerticalAlignment="Top" Width="30" Click="Close_Button_Click" FontFamily="Microsoft YaHei UI Light" Background="#FFF2F2FF" BorderThickness="2,0,0,0" BorderBrush="#FF6495ED" FontSize="18" Padding="0" />
+        <Button x:Name="Mini_Button" Content="─" HorizontalAlignment="Left" Height="28" Margin="963,2,0,0" VerticalAlignment="Top" Width="30" Click="Mini_Button_Click" FontFamily="Microsoft YaHei UI Light" Background="#FFF2F2FF" BorderThickness="2,0,0,0" BorderBrush="#FF6495ED" FontSize="18" Padding="0" />
+        <Button x:Name="Info_Button" Content="도움말" HorizontalAlignment="Left" Height="28" Margin="901,2,0,0" VerticalAlignment="Top" Width="62" Click="Info_Button_Click" FontFamily="Microsoft YaHei UI Light" Background="#FFF2F2FF" BorderThickness="2,0,0,0" BorderBrush="#FF6495ED" FontSize="18" Padding="0" />
+
+        <TextBox x:Name="Set_Title" HorizontalAlignment="Left" Height="80" Margin="10,37,0,0" TextWrapping="Wrap" Text="세트 이름" VerticalAlignment="Top" Width="594" FontSize="50"/>
+        <ScrollViewer Height="444" Width="1004" Margin="10,122,10,10">
+            <StackPanel x:Name="Lines" HorizontalAlignment="Left" VerticalAlignment="Top" Width="984" CanVerticallyScroll="True"/>
+        </ScrollViewer>
+        <Button x:Name="AddLine" Content="라인 추가" HorizontalAlignment="Left" Height="80" Margin="609,37,0,0" VerticalAlignment="Top" Width="200" Click="AddLine_Click" FontSize="36"/>
+        <Button x:Name="Save" Content="세트 저장" HorizontalAlignment="Left" Height="80" Margin="814,37,0,0" VerticalAlignment="Top" Width="200" Click="Save_Click" FontSize="36"/>
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="Memorizer.Select_Mode"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Memorizer"
+        mc:Ignorable="d"
+        Title="메모라이저 Memorizer | 학습 모드" Height="580" Width="1028" ResizeMode="NoResize" WindowStyle="None" MouseLeftButtonDown="Select_Mode_MouseDown" BorderBrush="#FF3AA0FB" BorderThickness="2" Icon="Memorizer.ico" WindowStartupLocation="CenterOwner" ShowInTaskbar="False" >
+    <Grid>
+        <Rectangle Fill="#FFF2F2FF" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="1024" />
+        <Label Content="메모라이저 Memorizer | 학습 모드" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="250" Foreground="LightGray" FontSize="16" FontFamily="Malgun Gothic Semilight" Margin="4,0,0,0"/>
+        <Button x:Name="Close_Button" Content="×" HorizontalAlignment="Left" Height="28" Margin="994,2,0,0" VerticalAlignment="Top" Width="30" Click="Close_Button_Click" FontFamily="Microsoft YaHei UI Light" Background="#FFF2F2FF" BorderThickness="2,0,0,0" BorderBrush="#FF6495ED" FontSize="18" Padding="0" />
+        <Button x:Name="Info_Button" Content="도움말" HorizontalAlignment="Left" Height="28" Margin="932,2,0,0" VerticalAlignment="Top" Width="62" Click="Info_Button_Click" FontFamily="Microsoft YaHei UI Light" Background="#FFF2F2FF" BorderThickness="2,0,0,0" BorderBrush="#FF6495ED" FontSize="18" Padding="0" />
+
+        <TextBlock x:Name="title"  HorizontalAlignment="Left" Height="50" Margin="0,180,0,0" TextWrapping="Wrap" Text="Set_NAME" VerticalAlignment="Top" Width="1024" TextAlignment="Center" FontSize="32"/>
+        <TextBlock Text="Memorizer 학습 모드" HorizontalAlignment="Left" Height="80" Margin="274,100,0,0" VerticalAlignment="Top" Width="480" FontSize="50" FontFamily="Microsoft JhengHei Light" TextAlignment="Center"/>
+        <Button x:Name="Check" HorizontalAlignment="Left" Height="50" Margin="414,235,0,0" VerticalAlignment="Top" Width="50" Click="Check_Click" Background="White" BorderBrush="#FF707070" />
+        <TextBlock Text="집중 모드" HorizontalAlignment="Left" Height="50" Margin="464,235,0,0" VerticalAlignment="Top" Width="150" FontSize="30" FontFamily="Microsoft JhengHei Light" TextAlignment="Center"/>
+        <Button x:Name="Word_Study" Content="단어 학습" HorizontalAlignment="Left" Height="150" Margin="164,342,0,0" VerticalAlignment="Top" Width="250" FontSize="50" Click="Word_Study_Click"/>
+        <Button x:Name="Mean_Study" Content="뜻 학습" HorizontalAlignment="Left" Height="150" Margin="614,342,0,0" VerticalAlignment="Top" Width="250" FontSize="50" Click="Mean_Study_Click"/>
+    </Grid>
+</Window>

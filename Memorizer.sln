@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "메모라이저 Memorizer", "메모라이저 Memorizer\메모라이저 Memorizer.vdproj", "{83A76D10-AEF0-4C92-9BA9-BE25B7F0D54A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83A76D10-AEF0-4C92-9BA9-BE25B7F0D54A}.Debug|Any CPU.ActiveCfg = Debug
+		{83A76D10-AEF0-4C92-9BA9-BE25B7F0D54A}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DCFEB13-1994-44FA-84C2-AB4C51D0E9C4}
+	EndGlobalSection
+EndGlobal
