@@ -1,5 +1,8 @@
 # Memorizer
 
+2018년 북일 멀티미디어 대회 우승작 (1st award in Software exhibition of 2018 Bugil Academy Multimedia Competition)
+2018년 정보올림피아드 공모 부문 출품작 (Submission for Software exhibition of 2018 Korea Olympiad in Informatics)
+
 ## 사용방법
 
 ### 메인화면
